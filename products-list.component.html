@@ -1,0 +1,14 @@
+<table class="table table-condensed">
+    <tr>
+        <th>Productid</th>
+        <th>ProductName</th>
+        <th>ProductPrice</th>
+    </tr>
+    <tr *ngFor="let p of prodList">
+        <td>{{p.Prodid}}</td>
+        <td><a [routerLink]="['detail',p.Prodid]">{{p.ProductName}} </a> </td>
+        <!-- <td>{{p.ProductName}}</td> -->
+   
+    </tr>
+</table>
+<router-outlet></router-outlet>
